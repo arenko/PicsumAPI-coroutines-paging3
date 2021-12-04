@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Picsum Photos</string>
+    <string name="author">By %1$s</string>
+    <string name="normal">Normal</string>
+    <string name="grayscale">Grayscale</string>
+    <string name="blur">Blur</string>
+</resources>

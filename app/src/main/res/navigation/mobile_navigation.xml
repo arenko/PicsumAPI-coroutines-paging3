@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_main">
+
+    <fragment
+        android:id="@+id/navigation_main"
+        android:name="com.photos.picsum.ui.list.PhotoListFragment"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/navigation_detail" />
+        <argument
+            android:name="clientRef"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_detail"
+        android:name="com.photos.picsum.ui.detail.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_mainFragment"
+            app:destination="@id/navigation_main" />
+
+    </fragment>
+
+
+</navigation>
